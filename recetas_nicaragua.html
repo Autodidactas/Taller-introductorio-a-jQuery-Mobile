@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<title>Documento sin título</title>
+
+<meta name="viewport" content="width=device-width, minimum-scale=1, maximum-scale=1">
+   <link rel="stylesheet" href="http://code.jquery.com/mobile/1.0/jquery.mobile-1.0.min.css" />
+   <script type="text/javascript" src="http://code.jquery.com/jquery-1.6.4.min.js"></script>
+   <script type="text/javascript" src="http://code.jquery.com/mobile/1.0/jquery.mobile-1.0.min.js"></script>
+
+</head>
+
+<body>
+
+	<!-- ************************pagina 1************************ -->
+	<section id="pagina1" data-role="page">
+		<header data-role="header" data-position="fixed">
+			<h1>nicaragua</h1>
+			<a href="index.html" data-direction="reverse" data-iconpos="notext" data-icon="home">home</a>
+		</header>
+		<article data-role="content">
+			<p>
+				Mis recetas
+
+			</p>
+			<ul data-role="listview" data-filter="true" data-filter-placeholder="Recetas....">
+	           <li><a href="#receta1">Empanadas de platanos maduros</a></li>
+	           <li><a href="#receta2">chopsuey nicaraguense</a></li>
+	            <li><a href="receta3">Guiso de pipian</a></li>
+            </ul>	
+		</article><!-- /content -->
+		<footer data-role="footer" data-theme="e">
+			<h1>Cocinandoando</h1>
+		</footer><!-- /footer -->
+	</section><!-- /page -->
+
+<!-- ************************ fin pagina 1************************ -->
+
+<!-- ************************receta 1************************ -->
+	
+	<section id="receta1" data-role="page">
+		<header data-role="header" data-role>
+			<a href="#pagina1">Volver</a>
+			<a href="#receta2">siguiente</a>
+			<!-- tener en cuenta que hasta dos es posible, ya que despues se pierde los estilos -->
+
+			<h1>Empanadas de platanos maduros</h1>
+		</header><!-- /header -->
+		<article data-role="content">
+			<p>Ingredientes</p>
+			<p>
+				<ul data-role="listview" data-theme="b">
+             <li>2 Platanos Maduros</li>
+             <li>1/2 taza de queso rallado (de preferencia queso chontaleño o queso mexicano blanco para los de California</li>
+             <li>1 Cuchadarita de harina</li>
+             </ul>
+			</p>
+			<p>Procedimiento</p>
+			<p>
+				Poner los platanos a cocer, cortados por la mitad con todo y cascara. Cuando esten suaves, se ponen a escurrir y se pelan. Se machacan bien con un tenedor, hasta formar una masa. Se le agrega la harina a la masa y se hacen tortillas, se le pone el queso en medio y se dobla la tortilla por la mitad, sellando bien las orillas para que el queso no se salga, apretar toda la orilla con el final de un tenedor para sellar y adornar la empanada. Se frien en aceite bien caliente hasta que se doren por ambos lados. 
+                Servir con frijolitos refritos, crema y chismol. 
+
+			</p>
+			<p> Te gusto? <br>
+				<a href="#si" data-role="button" data-inline="true" data-transition="slideup">si</a>
+                <a href="#no" data-role="button" data-inline="true" data-transition="pop">no</a></p>
+		</article><!-- /content -->
+		<footer data-role="footer">
+			<h1>Cocinandoando</h1>
+		</footer><!-- /footer -->
+	</section><!-- /page -->
+<!-- ************************fin receta 1************************ -->
+
+<!-- *********************opciones de la receta 1********************* -->
+	<section id="si" data-role="page">
+		<header data-role="header">
+			<a href="#receta1">Volver</a>
+			<h1>Valoracion</h1>
+		</header><!-- /header -->
+		<article data-role="content">
+			<p>Si me gusto</p>
+		</article><!-- /content -->
+		<footer data-role="footer">
+			<h1>cocinandoando</h1>
+		</footer><!-- /footer -->
+	</section><!-- /page -->
+
+	<section id="no" data-role="page">
+		<header data-role="header">
+			<a href="#receta1">Volver</a>
+			<h1>Valoracion</h1>
+		</header><!-- /header -->
+		<article data-role="content">
+			<p>no me gusto</p>
+		</article><!-- /content -->
+		<footer data-role="footer">
+			<h1>cocinandoando</h1>
+		</footer><!-- /footer -->
+	</section><!-- /page -->
+<!-- *********************opciones de la receta 1********************* -->
+
+<!-- ************************************ receta 2************************************-->
+
+<section id="receta2" data-role="page">
+	<header data-role="header">
+		<h1>Chop Suey (Estilo Nicaraguense)</h1>
+	</header><!-- /header -->
+	<article data-role="content">
+		<p>Ingredientes</p>
+
+		<p>
+         <ol data-role="listview">
+         	<li>Carne 2 lbs (Pollo, Res, Camarones o Puerco)al gusto,puede combinarlas</li>
+         	<li>1 Repollo, 3 Zanahoria, 2 Challote</li>
+         	<li>1 Cebolla,1 Apio,3 Chiltoma(Sweet Pepper)Roja, Verde, Amarilla</li>
+         	<li>1 Ajo picado,Margarina,Consome de pollo en polvo</li>
+         	<li>Salsa de tomates,Salsa soya, Mostaza (Al gusto)</li>
+         </ol>
+		</p>
+		<p> Te gusto? <br>
+				<a href="#si" data-role="button" data-inline="true" data-transition="slideup">si</a>
+                <a href="#no" data-role="button" data-inline="true" data-transition="pop">no</a></p>
+	</article><!-- /content -->
+	<footer data-role="footer">
+		<h1>cocinandoando</h1>
+	</footer><!-- /footer -->
+</section><!-- /page -->
+</body>
+</html>
